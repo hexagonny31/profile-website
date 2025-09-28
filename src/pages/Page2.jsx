@@ -8,8 +8,8 @@ function Page2() {
     return(
         <>
             <Helmet>
-                <link rel="icon" href="/about-tab.ico?v=3" />
-                <link rel="shortcut icon" href="/about-tab.ico?v=3" />
+                <link rel="icon" href={`${process.env.PUBLIC_URL}/about-tab.ico?v=3`} />
+                <link rel="shortcut icon" href={`${process.env.PUBLIC_URL}/about-tab.ico?v=3`} />
                 <title>Actual info like a resume</title>
             </Helmet>
             <Nav/>

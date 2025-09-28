@@ -7,8 +7,8 @@ function Page1() {
     return (
         <>
             <Helmet prioritizeSeoTags>
-                <link rel="icon" href="/hobby-tab.ico?v=2" />
-                <link rel="shortcut icon" href="/hobby-tab.ico?v=2" />
+                <link rel="icon" href={`${process.env.PUBLIC_URL}/hobby-tab.ico?v=2`} />
+                <link rel="shortcut icon" href={`${process.env.PUBLIC_URL}/hobby-tab.ico?v=2`} />
                 <title>Let a man do his hobbies</title>
             </Helmet>
             <Nav/>
