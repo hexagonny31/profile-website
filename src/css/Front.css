@@ -1,0 +1,40 @@
+/* About Me Section */
+.am {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.am .container-sm {
+    flex: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.am-h,
+.am-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.am h1 {
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 0 0;
+}
+
+.am p {
+    text-align: center;
+}

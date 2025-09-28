@@ -1,0 +1,46 @@
+.resume {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.resume .container-xs {
+    background: var(--container-color);
+    border-radius: 10px;
+    padding: 10px 25px 10px 25px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.resume .resume-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.greet {
+    font-weight: 500;
+    padding: 15px 0 10px 0;
+}
+
+.resume .resume-header > li {
+    padding: 15px;
+}
+
+.resume .simple-list p:nth-child(2) {
+    color:rgb(136, 135, 135);
+    font-size: 85%;
+}
+
+.resume img {
+    border-style: none;
+}
+
+.rh {
+    display: block;
+    margin: -5px 0;
+    font-weight: 700;
+    font-size: x-large;
+}

@@ -1,0 +1,48 @@
+.spoilerContainer {
+    border: 1px solid rgb(167, 167, 167);
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    width: 600px;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.spoilerTop {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: rgb(128, 166, 214);
+    border: none;
+    padding: 8px;
+    cursor:pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.spoilerInside {
+    background: rgb(45, 45, 233);
+    padding: 10px;
+    transition: 1s;
+}
+
+.arrow {
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+.arrow.open {
+    transform: rotate(90deg);
+}
+
+.spoilerContent {
+    max-height: 0;
+    padding: 0 15px;
+    background-color: #fafafa;
+    transition: max-height 0.2s ease, padding 0.2s ease-in-out;
+}
+
+.spoilerContent.open {
+    max-height: 500px;
+    padding: 20px 15px;
+}

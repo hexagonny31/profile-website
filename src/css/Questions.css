@@ -1,0 +1,31 @@
+.faq {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.faq .container-sm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.faq h1 {
+    font-weight: 600;
+}
+
+.faq .children {
+    list-style: circle;
+    margin-left: 25px;
+}
+
+.faq p {
+    font-weight: 500;
+}

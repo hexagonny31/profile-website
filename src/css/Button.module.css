@@ -1,0 +1,82 @@
+/* Buttons */
+.btn {
+    display: inline-block;
+    width: 160px;
+    background-image: var(--button-1);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 13px 20px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.3s;
+    transform: scale(109%);
+    background-size: contain;
+}
+
+.btn-folder {
+    background: url(../assets/buttons/button-folder-closed.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+
+    border: none;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.btn-folder:hover {
+    background-image: url(../assets/buttons/button-folder-open.webp);
+}
+
+.home {
+    background-image: url(../assets/buttons/button-home.webp);
+    width: 28px;
+    height: 28px;
+}
+
+.home:hover {
+    opacity: 0.3s;
+}
+
+.close {
+    top:-25px;
+    right: -25px;
+    padding: 0 0;
+    width: 25px;
+    height: 25px;
+    
+    position: absolute;
+    
+    opacity: 0.8;
+    background-image: url(../assets/buttons/button-close.webp);
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.close:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.tilt-hover {
+    transition: transform 0.3s;
+}
+
+.tilt-hover:hover {
+    transform: rotate(-3deg);
+}

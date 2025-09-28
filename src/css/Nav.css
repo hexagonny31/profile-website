@@ -1,0 +1,81 @@
+/* Navigator Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #bbd7e9;
+    padding: 10px 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.pfp {
+    border-style: solid;
+    box-shadow: 2px 2px 4px rgba(45, 12, 192, 0.137);
+    border-radius: 100%;
+    border-color:#00A36C;
+}
+
+.username {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+    margin-left: -10px;
+    display: block;
+}
+.username:hover {
+    color: var(--primary-color);
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    align-content: center;
+}
+
+
+.navbar a {
+    padding: 10px 13px;
+    display: block;
+    font-weight: 500;
+}
+
+.navbar ul li a {
+    padding: 8px 18px;
+    display: block;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.navbar ul li:first-child a {
+    margin: 8px;
+}
+.navbar ul li:nth-child(3) a {
+    margin-left: 3px;
+    background-image: var(--button-2);
+}
+.navbar ul li:last-child a {
+    margin-left: 5px;
+    background-image: var(--button-3);
+}
+
+.navbar ul li a i {
+    margin-right:  6px;;
+}

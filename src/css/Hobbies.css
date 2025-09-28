@@ -1,0 +1,48 @@
+.hby {
+    display: flex;
+    justify-content: center;
+    padding: 27px 0;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.hby .container-lg {
+    flex: 1;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.hby .hby-content {
+    width: 100%;
+}
+
+.hby img:hover {
+    transform: none;
+}
+
+.hby h1 {
+    font-weight: 600;
+}
+
+.hby p {
+    padding: 0 20%;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hby div ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.hby div hr {
+    margin-bottom: 30px;
+}

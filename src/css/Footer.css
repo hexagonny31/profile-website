@@ -1,0 +1,15 @@
+.folder {
+    display: flex;
+    align-content: flex-end;
+    justify-content: right;
+    margin-right: 13px;
+}
+
+.footer  {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+}

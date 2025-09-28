@@ -1,0 +1,39 @@
+/* Gallery */
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 190px;
+    background-color: var(--light-color);
+    transition: 0.5s;
+}
+  
+.gallery:hover {
+    transform: scale(107%);
+    border: 1px solid #777;
+    animation: ease-in;
+}
+
+.gallery img {
+    width: 100%;
+    height: 110px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.height-ignore img {
+    height: max-content;
+}
+
+.width-ignore img {
+    width: max-content;
+}
+
+.desc {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    color: var(--dark-color);
+}

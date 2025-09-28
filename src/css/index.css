@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+:root {
+    --primary-color: #334664;
+    --light-color: #f8fbf8;
+    --dark-color: #27232e;
+    --border-color: #ccc;
+    --container-color: #e8f4fcea;
+
+    --button-1: url('../assets/buttons/button-1.webp');
+    --button-2: url('../assets/buttons/button-2.webp');
+    --button-3: url('../assets/buttons/button-3.webp');
+
+    --sb-track-color: #c6cad6;
+    --sb-thumb-color: #444852;
+    --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+body {
+    font-family: "Comic Neue", cursive;
+    font-size: 16px;
+    color: var(--dark-color);
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(45, 12, 192, 0.137);
+    padding-top: 70px;
+
+    background-image: url('../assets/youtube-banner.webp');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* ensures the height adjusts proportionally */
+    display: block;
+    transition: 0.3s
+}
+img:hover {
+    transform: scale(108%);
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+    z-index: 1;
+}
+
+.container-lg {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 25px;
+    z-index: 1;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    z-index: 1;
+}
+
+.container-xs {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px 25px;
+    z-index: 1;
+}
+
+hr.dashed {
+    margin: 10px auto;
+    border-top: 3px dashed var(--border-color);
+}
+  
+hr.dotted {
+    margin: 10px auto;
+    border-top: 3px dotted var(--border-color);
+  }
+  
+hr.solid {
+    margin: 10px auto;
+    border-top: 3px solid var(--border-color);
+}
+
+hr.rounded {
+    margin: 10px auto;
+    border-top: 8px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 186px;
+    position: absolute;
+
+    background: url('../assets/scribble-bg.png');
+    background-size: contain;
+    border-style: dashed;
+    border-color: var(--border-color);
+    border-radius: 6px;
+
+    color: #fff;
+    text-align: center;
+    padding: 8px 8px;
+    -webkit-user-select: text; /* Safari */
+    -ms-user-select: text; /* IE 10 and IE 11 */
+    user-select: text; /* Standard syntax */
+
+    z-index: 1;
+    top: 130%;
+    left: -125%;
+}
+
+/* Text Classes */
+.text-xxl {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-xs {
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* List Components */
+.simple-list ul {
+    display: block;
+    list-style-type:circle;
+    padding: 0 0;
+}
+
+.simple-list h3 {
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 0 3px 0;
+}
+
+.simple-list li {
+    margin-left: 16px;
+}
+  
+/* Transistions & Animations */
+
+@keyframes spinIn {
+    0% {
+        transform: rotate(-380deg) scale(0.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1s ease-in forwards;
+    animation-delay: 0.2s;
+}
+  
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-down {
+    opacity: 0;
+    animation: fadeDown 1s ease-out forwards
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.spinZoom {
+    animation:
+    spinIn 0.9s ease-out forwards,
+    fadeIn 0.8s ease-in forwards; 
+    animation-delay: 0.2s;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 0.4s ease-out forwards, float 3s ease-in-out infinite;
+}
+
+.popup .precheck {
+    visibility: hidden;
+    display: block;
+  }
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in forwards;
+}

@@ -1,0 +1,38 @@
+.personal-menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.personal-menu ul li {
+    margin-left: 20px;
+}
+
+.personal-menu a {
+    display: block;
+    font-weight: 600;
+    width: 125px;
+    padding: 8px 18px;
+    transition: 0.3s;
+}
+
+.personal-menu a:hover {
+    color: var(--primary-color);
+}
+
+.personal-menu ul li:first-child a {
+    background-image: var(--button-2);
+}
+.personal-menu ul li:nth-child(2) a {
+    background-image: var(--button-3);
+}
+.personal-menu ul li:last-child a {
+    background-image: var(--button-1);
+}
+
+.personal-menu a i {
+    margin-right: 10px;
+}
+
+.personal-menu .fade-up{
+    animation-delay: 50s;
+}
