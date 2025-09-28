@@ -9,8 +9,8 @@ function Home() {
     return (
         <>
             <Helmet prioritizeSeoTags>
-                <link rel="icon" href={`${process.env.PUBLIC_URL}/tab-icon.ico?v=1`} />
-                <link rel="shortcut icon" href={`${process.env.PUBLIC_URL}/tab-icon.ico?v=1`}/>
+                <link rel="icon" href="./tab-icon.ico?v=1" />
+                <link rel="shortcut icon" href="./tab-icon.ico?v=1" />
                 <title>Behind of my page</title>
             </Helmet>
             <Nav/>
