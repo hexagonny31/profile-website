@@ -1,9 +1,10 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import ResetScroll from './components/ResetScroll.jsx'
-import Home from './pages/Home.jsx'
+import Home  from './pages/Home.jsx'
 import Page1 from './pages/Page1.jsx'
 import Page2 from './pages/Page2.jsx'
 import Page3 from './pages/Page3.jsx'
+import Page4 from './pages/Page4.jsx'
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/hobbies" element={<Page1/>}/>
                 <Route path="/about" element={<Page2/>}/>
                 <Route path="/faq" element={<Page3/>}/>
+                <Route path="/6D63737461636B73" element={<Page4/>}/>
             </Routes>
         </Router>
     );

@@ -7,18 +7,6 @@
     align-items: flex-end;
 }
 
-.am .container-sm {
-    flex: 1;
-    max-width: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: var(--container-color);
-    border-radius: 10px;
-    width: 100%;
-}
-
 .am-h,
 .am-content img {
     display: block;
