@@ -10,9 +10,7 @@ function Page2() {
                 <link rel="shortcut icon" href="./about-tab.ico?v=3" />
                 <title>Actual info like a resume</title>
             </Helmet>
-            <Nav/>
             <Resume/>
-            <Footer/>
         </>
     );
 }
