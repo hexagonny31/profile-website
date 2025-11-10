@@ -10,7 +10,7 @@ function Nav(){
 
     useEffect(() => {
         async function loadAvatar() {
-            const res = await fetch(`http://localhost:3001/api/avatar/${userId}`);
+            const res = await fetch(`https://discord-avatar-api.onrender.com/api/avatar/${userId}`);
             const data = await res.json();
             setAvatarUrl(data.avatar_url);
         }

@@ -14,8 +14,8 @@ function Front() {
                     <p className="text-md">
                         "This picture really encapsulates how I feel being an engineering student."
                     </p>
-                    <Menu showIcon={[false, true, true]} link={["/hobbies", "/about", "/faq", "/6D63737461636B73"]}
-                        i={[null, "fas fa-info", "fas fa-message", null]} label={["My Hobbies", "About Me", "FAQ", "test"]}/>
+                    <Menu showIcon={[false, true, true]} link={["/hobbies", "/about", "/faq"]}
+                        i={[null, "fas fa-info", "fas fa-message", null]} label={["My Hobbies", "About Me", "FAQ"]}/>
                 </div>
             </div>
         </section>
