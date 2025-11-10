@@ -1,15 +1,28 @@
-import pfp from '../../assets/pfp.png'
+import pfpFallback from '../../assets/pfp.png'
+import { useEffect, useState } from 'react';
 import { showMessage } from '../../js/popUpMessage.js';
 import Button from '../Button.jsx'
 import '../../css/Nav.css'
 
 function Nav(){
+    const userId = "954412910350860390";
+    const [avatarUrl, setAvatarUrl] = useState(pfpFallback);
+
+    useEffect(() => {
+        async function loadAvatar() {
+            const res = await fetch(`http://localhost:3001/api/avatar/${userId}`);
+            const data = await res.json();
+            setAvatarUrl(data.avatar_url);
+        }
+        loadAvatar()
+    }, []);
+
     return(
         <nav className="navbar">
             <div className="container">
                 <div className="logo">
                     <div className="popup" onClick={showMessage}>
-                        <img className="pfp" draggable="false" src={pfp} alt="Current Profile Picture" 
+                        <img className="pfp" draggable="false" src={avatarUrl} alt="Current Profile Picture" 
                         width="50" height="50"/>
                         <span className="popuptext" id="message">"placeholder message." - html 2025</span>
                     </div>

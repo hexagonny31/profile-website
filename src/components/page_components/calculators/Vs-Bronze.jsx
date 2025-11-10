@@ -97,20 +97,20 @@ function VSRatio() {
             case "Tin Bronze":
                 composition = {
                     copper: calculateBits(percents.copper),
-                    tin: calculateBits(100 - percents.copper)
+                    tin:    calculateBits(100 - percents.copper)
                 };
                 break;
             case "Bismuth Bronze":
                 composition = {
-                    copper: calculateBits(100 - percents.zinc - percents.bismuth),
-                    zinc: calculateBits(percents.zinc),
+                    copper:  calculateBits(100 - percents.zinc - percents.bismuth),
+                    zinc:    calculateBits(percents.zinc),
                     bismuth: calculateBits(percents.bismuth)
                 };
                 break;
             case "Black Bronze":
                 composition = {
                     copper: calculateBits(100 - percents.gold - percents.silver),
-                    gold: calculateBits(percents.gold),
+                    gold:   calculateBits(percents.gold),
                     silver: calculateBits(percents.silver)
                 };
                 break;
