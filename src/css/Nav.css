@@ -16,6 +16,15 @@
     padding-bottom: 0;
 }
 
+.decor {
+    position: relative;
+    top: 7px;
+    width: 100%;
+    height: 9px;
+    margin-bottom: -10px;
+    background-image: url('../assets/line.png');
+}
+
 .logo {
     display: flex;
     align-items: center;

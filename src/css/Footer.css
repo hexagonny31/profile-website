@@ -1,7 +1,7 @@
 .folder {
-    display: flex;
-    align-content: flex-end;
-    justify-content: right;
+    position: fixed;
+    right: 0;
+    bottom: 1%;
     margin-right: 13px;
 }
 
@@ -9,6 +9,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
+    right: 0;
     width: 100%;
     text-align: center;
     z-index: 0;

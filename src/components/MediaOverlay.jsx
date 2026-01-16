@@ -7,7 +7,7 @@ function MediaOverlay({ visible, src, onClose }) {
     // if the componet is not visible or "src" is empty, return nothing.
     if (!visible || !src) return null;
 
-    const isVideo = src.endsWith('.mp4');
+    const isVideo = src.endsWith('.mp4') || src.endsWith('.mov');
 
     return (
         <div className="media-overlay fade-in">

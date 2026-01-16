@@ -39,6 +39,7 @@ function Nav(){
                     </ul>
                 </div>
             </div>
+            <div className="decor"></div>
         </nav>
     );
 }

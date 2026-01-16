@@ -75,18 +75,18 @@ export default function randGalleryEffect() {
 
         const images = [video1, video2, video3, video4, video5, video6];
 
-        const videoEl = recommendedVideos[Math.floor(Math.random() * recommendedVideos.length)];
-        const imageEl = images[Math.floor(Math.random() * images.length)];
-        const videoID = getVideoID(videoEl.url);
+        const videoElement = recommendedVideos[Math.floor(Math.random() * recommendedVideos.length)];
+        const imageElement = images[Math.floor(Math.random() * images.length)];
+        const videoID = getVideoID(videoElement.url);
 
         return {
             randVideo: {
-                url: videoEl.url,
-                desc: videoEl.desc,
+                url: videoElement.url,
+                desc: videoElement.desc,
                 thumbnail: videoID ? `https://img.youtube.com/vi/${videoID}/maxresdefault.jpg` : ""
             },
             randImage: {
-                url: imageEl,
+                url: imageElement,
                 desc: "Random image"
             }
         };

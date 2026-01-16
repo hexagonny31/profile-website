@@ -7,7 +7,7 @@ function Page5() {
             <Helmet prioritzeSeoTags>
                 <link rel="icon" href="./tab-icon.ico?v=1"/>
                 <link rel="shortcut icon" href="./tab-icon.ico?v=1"/>
-                <title>Funny little test page</title>
+                <title>What is diddyblud doing with a calculator?</title>
             </Helmet>
             <Calc/>
         </>

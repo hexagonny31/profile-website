@@ -1,10 +1,15 @@
 /* About Me Section */
 .am {
-    display: flex;
-    justify-content: center;
-    padding: 27px 0;
+    position: relative;
+    margin-top: 20px;
     width: 100%;
-    align-items: flex-end;
+}
+
+.subclass {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
 }
 
 .am-h,

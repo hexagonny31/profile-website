@@ -1,10 +1,10 @@
-import frontMeme from '../../assets/memes/suicide1.jpg'
+import frontMeme from '../../assets/memes/meme26.webp'
 import Menu from '../Menu.jsx'
 import '../../css/Front.css'
 
 function Front() {
     return(
-        <section className="am">
+        <section className="am subclass">
             <div className="container-sm fade-up">
                 <div className="am-content">
                     <h1 className="am-h text-lg">
@@ -15,7 +15,7 @@ function Front() {
                         "This picture really encapsulates how I feel being an engineering student."
                     </p>
                     <Menu showIcon={[false, true, true]} link={["/hobbies", "/about", "/faq"]}
-                        i={[null, "fas fa-info", "fas fa-message", null]} label={["My Hobbies", "About Me", "FAQ"]}/>
+                        i={[null, "fas fa-info", "fas fa-message"]} label={["My Hobbies", "About Me", "FAQ"]}/>
                 </div>
             </div>
         </section>
