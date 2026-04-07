@@ -4,8 +4,8 @@ function MCStacks() {
     const [mode, setMode]             = useState("toStacks");
     const [stackSize, setStackSize]   = useState(16);
     const [totalItems, setTotalItems] = useState();
-    const [stacks, setStacks]         = useState();
-    const [leftover, setLeftover]     = useState();
+    const [stacks, setStacks]         = useState(0);
+    const [leftover, setLeftover]     = useState(0);
     const [result, setResult]         = useState();
 
     const calculateToStacks = () => {
@@ -41,7 +41,7 @@ function MCStacks() {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        if(mode === "toStacks")        calculateToStacks();
+        if(mode === "toStacks")       calculateToStacks();
         else if(mode === "toDecimal") calculateToDecimal();
     }
 
