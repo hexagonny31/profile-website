@@ -10,12 +10,22 @@ function Nav(){
 
     useEffect(() => {
         async function loadAvatar() {
-            const res = await fetch(`https://discord-avatar-api.onrender.com/api/avatar/${userId}`);
-            const data = await res.json();
-            setAvatarUrl(data.avatar_url);
+            try {
+                const res = await fetch(`https://discord-avatar-api.onrender.com/api/avatar/${userId}`);
+                if (res.ok) {
+                    console.warn(`Avatar API failed with status ${res.status}. Keeping fallback image.`);
+                    return;
+                }
+                const data = await res.json();
+                if (data.avatar_url) {
+                    setAvatarUrl(data.avatar_url);
+                }
+            } catch (err) {
+                console.error("Network error while fetching avatar:", err);
+            }
         }
         loadAvatar()
-    }, []);
+    }, [userId]);
 
     return(
         <nav className="navbar">
