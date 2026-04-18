@@ -26,7 +26,7 @@ function Nav(){
                         width="50" height="50"/>
                         <span className="popuptext" id="message">"placeholder message." - html 2025</span>
                     </div>
-                    <a className="username" target="_blank" href="https://discordapp.com/users/954412910350860390">hexagonny.</a>
+                    <a className="username" target="_blank" href={`https://discordapp.com/users/${userId}`}>hexagonny.</a>
                 </div>
                 
                 {/* please do not turn this into a modular menu component, i have probably did this before. JUST DON'T */}
